@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		7BC2A5872900D1100061B499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2A5862900D1100061B499 /* AppDelegate.swift */; };
 		7BC2A5892900D1100061B499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2A5882900D1100061B499 /* SceneDelegate.swift */; };
-		7BC2A58B2900D1100061B499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2A58A2900D1100061B499 /* ViewController.swift */; };
-		7BC2A58E2900D1100061B499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC2A58C2900D1100061B499 /* Main.storyboard */; };
 		7BC2A5902900D1160061B499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC2A58F2900D1160061B499 /* Assets.xcassets */; };
 		7BC2A5932900D1160061B499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC2A5912900D1160061B499 /* LaunchScreen.storyboard */; };
+		7BC2A59B2900D3630061B499 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2A59A2900D3630061B499 /* CardSelectionVC.swift */; };
+		7BC2A59D2901BE4E0061B499 /* CWButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2A59C2901BE4E0061B499 /* CWButton.swift */; };
+		7BC2A5A12901CA210061B499 /* RulesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2A5A02901CA210061B499 /* RulesVC.swift */; };
+		7BC2A5A32901D45C0061B499 /* CardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2A5A22901D45C0061B499 /* CardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7BC2A5832900D1100061B499 /* CardWorkout-Programmatic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CardWorkout-Programmatic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BC2A5862900D1100061B499 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BC2A5882900D1100061B499 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7BC2A58A2900D1100061B499 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7BC2A58D2900D1100061B499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BC2A58F2900D1160061B499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC2A5922900D1160061B499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BC2A5942900D1160061B499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BC2A59A2900D3630061B499 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
+		7BC2A59C2901BE4E0061B499 /* CWButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWButton.swift; sourceTree = "<group>"; };
+		7BC2A5A02901CA210061B499 /* RulesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesVC.swift; sourceTree = "<group>"; };
+		7BC2A5A22901D45C0061B499 /* CardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,14 @@
 		7BC2A5852900D1100061B499 /* CardWorkout-Programmatic */ = {
 			isa = PBXGroup;
 			children = (
+				7BC2A59C2901BE4E0061B499 /* CWButton.swift */,
 				7BC2A5862900D1100061B499 /* AppDelegate.swift */,
 				7BC2A5882900D1100061B499 /* SceneDelegate.swift */,
-				7BC2A58A2900D1100061B499 /* ViewController.swift */,
-				7BC2A58C2900D1100061B499 /* Main.storyboard */,
+				7BC2A5A02901CA210061B499 /* RulesVC.swift */,
+				7BC2A59A2900D3630061B499 /* CardSelectionVC.swift */,
 				7BC2A58F2900D1160061B499 /* Assets.xcassets */,
 				7BC2A5912900D1160061B499 /* LaunchScreen.storyboard */,
+				7BC2A5A22901D45C0061B499 /* CardDeck.swift */,
 				7BC2A5942900D1160061B499 /* Info.plist */,
 			);
 			path = "CardWorkout-Programmatic";
@@ -127,7 +133,6 @@
 			files = (
 				7BC2A5932900D1160061B499 /* LaunchScreen.storyboard in Resources */,
 				7BC2A5902900D1160061B499 /* Assets.xcassets in Resources */,
-				7BC2A58E2900D1100061B499 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +143,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BC2A58B2900D1100061B499 /* ViewController.swift in Sources */,
+				7BC2A5A32901D45C0061B499 /* CardDeck.swift in Sources */,
 				7BC2A5872900D1100061B499 /* AppDelegate.swift in Sources */,
+				7BC2A5A12901CA210061B499 /* RulesVC.swift in Sources */,
 				7BC2A5892900D1100061B499 /* SceneDelegate.swift in Sources */,
+				7BC2A59B2900D3630061B499 /* CardSelectionVC.swift in Sources */,
+				7BC2A59D2901BE4E0061B499 /* CWButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7BC2A58C2900D1100061B499 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BC2A58D2900D1100061B499 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7BC2A5912900D1160061B499 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +292,6 @@
 				INFOPLIST_FILE = "CardWorkout-Programmatic/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +319,6 @@
 				INFOPLIST_FILE = "CardWorkout-Programmatic/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

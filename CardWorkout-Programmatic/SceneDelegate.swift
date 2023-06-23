@@ -5,7 +5,11 @@
 //  Created by Bryant Irawan on 10/19/22.
 //
 
+///IF YOU WANT TO MAKE YOUR APP PROGRAMATIC INSTEAD OF STORYBOARD, USE THIS AS REFRENCE. YOU ALSO NEEDED TO DELETE MAIN, VIEWCONTROLLER, and DELETE references to MAIN in Info. MOSTLY LOOK AT LINE 23 and beyond  ///
+
 import UIKit
+
+//SceneDelegate is to handle multiple instances of an app (eg. having 2 Notes app open); new feature on iOS13
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,7 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+        //if you are using navigation controller, set rootViewController to that instead of a VC
+        window?.rootViewController = CardSelectionVC()
+        window?.makeKeyAndVisible()
+        
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
